@@ -4,5 +4,8 @@ import UIKit
 
 extension String {
 	
+	static var restaurants: String { return #function.localized() }
+	static var revealAll: String { return #function.localized() }
 	static var tab_internets: String { return #function.localized() }
+	static var tab_lunch: String { return #function.localized() }
 }

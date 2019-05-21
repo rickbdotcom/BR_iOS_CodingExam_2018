@@ -13,8 +13,7 @@ enum StoryboardLunch {
 	}
 	struct List: StoryboardScene {
 		typealias StoryboardClass = RestaurantsViewController
-		enum Segue: String, StoryboardSceneSegue {
-			case showDetail
+		struct Segue: StoryboardSceneSegue {
 		}
 		let identifier = ("List", "Lunch")
 	}

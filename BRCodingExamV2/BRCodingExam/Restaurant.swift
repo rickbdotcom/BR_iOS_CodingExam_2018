@@ -11,7 +11,7 @@ import ExtraKit
 
 struct Restaurant: Decodable, Injectable {
     typealias Container = RestaurantContainer
-    static var containerKeyPath: ContainerKeyPath { return \Container.restaurant }
+    static var containerKeyPath: ContainerKeyPath { return \RestaurantContainer.restaurant }
 
     let name: String?
     let backgroundImageURL: URL?

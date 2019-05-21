@@ -68,18 +68,3 @@ class RestaurantsViewController: UICollectionViewController, Activity {
         collectionView.refreshControl?.endRefreshing()
     }
 }
-
-class RestaurantCell: UICollectionViewCell, RestaurantContainer {
-
-    @IBOutlet var imageView: UIImageView!
-    @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var categoryLabel: UILabel!
-    
-    var restaurant: Restaurant? {
-        didSet {
-            nameLabel.text = restaurant!.name
-            categoryLabel.text = restaurant!.category
-            imageView.sd_setImage(with: restaurant!.backgroundImageURL, completed: nil)
-        }
-    }
-}

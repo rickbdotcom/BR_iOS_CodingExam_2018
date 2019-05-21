@@ -4,6 +4,8 @@ import UIKit
 
 extension UIColor {
 	
+	static var headerbar: UIColor { return UIColor(named: #function)! }
 	static var navbar: UIColor { return UIColor(named: #function)! }
 	static var tabbar: UIColor { return UIColor(named: #function)! }
+	static var text: UIColor { return UIColor(named: #function)! }
 }

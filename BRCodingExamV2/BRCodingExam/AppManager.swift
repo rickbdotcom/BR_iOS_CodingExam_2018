@@ -20,10 +20,10 @@ final class AppManager: NSObject, Injectable {
 
     let endpointCollection: LunchTymeAPICollection
     let sessionManager: SessionManager
-    let restaurantNavigationController: UINavigationController
+    let restaurantNavigationController: RestaurantNavigationController
     private var restaurants: [Restaurant]?
 
-    init(endpointCollection: LunchTymeAPICollection, sessionManager: SessionManager, restaurantNavigationController: UINavigationController) {
+    init(endpointCollection: LunchTymeAPICollection, sessionManager: SessionManager, restaurantNavigationController: RestaurantNavigationController) {
         self.endpointCollection = endpointCollection
         self.sessionManager = sessionManager
         self.restaurantNavigationController = restaurantNavigationController
@@ -38,6 +38,17 @@ final class AppManager: NSObject, Injectable {
     }
 
     func showDetail(for restaurant: Restaurant?) {
-        restaurantNavigationController.pushViewController(StoryboardLunch.Detail().instantiate().inject(value: restaurant), animated: true)
+        restaurantNavigationController.showDetail(for: restaurant)
+    }
+
+    func showRestaurantMap(with viewController: UIViewController) {
+        let rvc = RestaurantMapViewController()
+        rvc.canShowCallout = true
+        rvc.restaurants = restaurants
+
+        let nvc = UINavigationController(rootViewController: rvc)
+        nvc.modalTransitionStyle = .flipHorizontal
+
+       viewController.present(nvc, animated: true, completion: nil)
     }
 }

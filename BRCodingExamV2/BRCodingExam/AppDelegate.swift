@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         useAppManagerUIKitInjection()
 
         let endpointCollection = LunchTymeAPICollection(baseURL: URL(string: "https://s3.amazonaws.com/br-codingexams")!, apiVersion: nil)
-        let restaurantNavigationController = UINavigationController(rootViewController: StoryboardLunch.List().instantiate())
+        let restaurantNavigationController = RestaurantNavigationController(rootViewController: StoryboardLunch.List().instantiate())
         let webNavigationController = UINavigationController(rootViewController: WebViewController(with: URL(string: "https://www.bottlerocketstudios.com")!))
 
         appManager = AppManager(endpointCollection: endpointCollection, sessionManager: SessionManager.default, restaurantNavigationController: restaurantNavigationController)
