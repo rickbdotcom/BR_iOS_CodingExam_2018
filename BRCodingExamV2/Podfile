@@ -1,0 +1,14 @@
+project 'BRCodingExam.xcodeproj'
+
+platform :ios, '12.0'
+
+target 'BRCodingExam' do
+	use_frameworks!
+	inhibit_all_warnings!
+
+	pod 'Alamofire'
+	pod 'CodableAlamofire'
+	pod 'PromiseKit'
+	pod 'SDWebImage'
+	pod 'ExtraKit', :git => 'https://www.github.com/rickbdotcom/ExtraKit'
+end
