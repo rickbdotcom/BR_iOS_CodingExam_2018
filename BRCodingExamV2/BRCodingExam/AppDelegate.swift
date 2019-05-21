@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
     var appManager: AppManager!
+    let appConfiguration = AppConfiguration()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         initAppearance()
@@ -25,9 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func initApp() {
         useAppManagerUIKitInjection()
 
-        let endpointCollection = LunchTymeAPICollection(baseURL: URL(string: "https://s3.amazonaws.com/br-codingexams")!, apiVersion: nil)
+        let endpointCollection = LunchTymeAPICollection(baseURL: appConfiguration.env.restaurantsURL, apiVersion: nil)
         let restaurantNavigationController = RestaurantNavigationController(rootViewController: StoryboardLunch.List().instantiate())
-        let webNavigationController = UINavigationController(rootViewController: WebViewController(with: URL(string: "https://www.bottlerocketstudios.com")!))
+        let webNavigationController = UINavigationController(rootViewController: WebViewController(with: appConfiguration.env.bottleRocketURL))
 
         appManager = AppManager(endpointCollection: endpointCollection, sessionManager: SessionManager.default, restaurantNavigationController: restaurantNavigationController)
 

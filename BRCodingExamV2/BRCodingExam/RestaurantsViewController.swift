@@ -23,6 +23,8 @@ class RestaurantsViewController: UICollectionViewController, Activity {
 
         collectionView.refreshControl = UIRefreshControl()
         collectionView.refreshControl?.addTarget(self, action: #selector(loadRestaurantsIfNeeded), for: .valueChanged)
+
+        navigationItem.rightBarButtonItem = restaurantMapBarButtonItem()
     }
 
     override func viewDidAppear(_ animated: Bool) {

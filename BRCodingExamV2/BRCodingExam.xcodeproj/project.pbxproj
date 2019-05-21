@@ -33,6 +33,7 @@
 		0D686456228DC27100E88546 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D686455228DC27100E88546 /* RestaurantDetailViewController.swift */; };
 		0D686458228DC28100E88546 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D686457228DC28100E88546 /* WebViewController.swift */; };
 		0D68645F228DFF0600E88546 /* Lunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D68645B228DFF0600E88546 /* Lunch.storyboard */; };
+		0DEBAE682294B45900DD9BDF /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEBAE672294B45900DD9BDF /* AppConfiguration.swift */; };
 		C1F0007E861854A0BC01E90D /* Pods_BRCodingExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F6B8BE97FDE0B21322908E /* Pods_BRCodingExam.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		0D686455228DC27100E88546 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		0D686457228DC28100E88546 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		0D68645C228DFF0600E88546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Lunch.storyboard; sourceTree = "<group>"; };
+		0DEBAE672294B45900DD9BDF /* AppConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		771A4DE343C330A09D24F72C /* Pods-BRCodingExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRCodingExam.debug.xcconfig"; path = "Target Support Files/Pods-BRCodingExam/Pods-BRCodingExam.debug.xcconfig"; sourceTree = "<group>"; };
 		D375D71305CBFF19C79E63BC /* Pods-BRCodingExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRCodingExam.release.xcconfig"; path = "Target Support Files/Pods-BRCodingExam/Pods-BRCodingExam.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 				0D2B9C902290973F008BD2D3 /* API.swift */,
 				0D2B9C9B22909E53008BD2D3 /* AppManager.swift */,
 				0D2B9CA42290A6E6008BD2D3 /* Appearance.swift */,
+				0DEBAE672294B45900DD9BDF /* AppConfiguration.swift */,
 				0D2B9C9922909DEA008BD2D3 /* UIViewController+AppManager.swift */,
 				0D2B9C8922909404008BD2D3 /* Activity.swift */,
 				0D2B9C8A22909404008BD2D3 /* Alamofire.swift */,
@@ -316,6 +319,7 @@
 				0D3BC1262294ACCC00928136 /* RestaurantMap.swift in Sources */,
 				0D2B9C9C22909E54008BD2D3 /* AppManager.swift in Sources */,
 				0D3BC1272294ACCC00928136 /* RestaurantInfo.swift in Sources */,
+				0DEBAE682294B45900DD9BDF /* AppConfiguration.swift in Sources */,
 				0D2B9C8C22909404008BD2D3 /* Activity.swift in Sources */,
 				0D686456228DC27100E88546 /* RestaurantDetailViewController.swift in Sources */,
 				0D2B9CA52290A6E6008BD2D3 /* Appearance.swift in Sources */,
