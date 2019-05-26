@@ -14,7 +14,6 @@
 		0D2B9C94229099DC008BD2D3 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B9C92229099DC008BD2D3 /* Promise.swift */; };
 		0D2B9C95229099DC008BD2D3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B9C93229099DC008BD2D3 /* Error.swift */; };
 		0D2B9C9822909C02008BD2D3 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B9C9722909C01008BD2D3 /* Storyboards.swift */; };
-		0D2B9C9A22909DEA008BD2D3 /* UIViewController+AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B9C9922909DEA008BD2D3 /* UIViewController+AppManager.swift */; };
 		0D2B9C9C22909E54008BD2D3 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B9C9B22909E53008BD2D3 /* AppManager.swift */; };
 		0D2B9C9E2290A4C8008BD2D3 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B9C9D2290A4C8008BD2D3 /* Images.swift */; };
 		0D2B9CA12290A568008BD2D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D2B9C9F2290A567008BD2D3 /* Localizable.strings */; };
@@ -46,7 +45,6 @@
 		0D2B9C92229099DC008BD2D3 /* Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
 		0D2B9C93229099DC008BD2D3 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		0D2B9C9722909C01008BD2D3 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
-		0D2B9C9922909DEA008BD2D3 /* UIViewController+AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+AppManager.swift"; sourceTree = "<group>"; };
 		0D2B9C9B22909E53008BD2D3 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		0D2B9C9D2290A4C8008BD2D3 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		0D2B9CA02290A567008BD2D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 				0D2B9C9B22909E53008BD2D3 /* AppManager.swift */,
 				0D2B9CA42290A6E6008BD2D3 /* Appearance.swift */,
 				0DEBAE672294B45900DD9BDF /* AppConfiguration.swift */,
-				0D2B9C9922909DEA008BD2D3 /* UIViewController+AppManager.swift */,
 				0D2B9C8922909404008BD2D3 /* Activity.swift */,
 				0D2B9C8A22909404008BD2D3 /* Alamofire.swift */,
 				0D2B9C8B22909404008BD2D3 /* APIEndpoint.swift */,
@@ -309,7 +306,6 @@
 				0D2B9CA72290A7D1008BD2D3 /* Colors.swift in Sources */,
 				0D686450228DBF9600E88546 /* Restaurant.swift in Sources */,
 				0D2B9CA32290A5DF008BD2D3 /* Strings.swift in Sources */,
-				0D2B9C9A22909DEA008BD2D3 /* UIViewController+AppManager.swift in Sources */,
 				0D2B9C8E22909404008BD2D3 /* APIEndpoint.swift in Sources */,
 				0D686454228DC25F00E88546 /* RestaurantsViewController.swift in Sources */,
 				0D2B9C95229099DC008BD2D3 /* Error.swift in Sources */,

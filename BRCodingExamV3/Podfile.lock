@@ -1,0 +1,51 @@
+PODS:
+  - Alamofire (4.8.2)
+  - CodableAlamofire (1.1.1):
+    - Alamofire (~> 4.0)
+  - ExtraKit (0.7.0)
+  - PromiseKit (6.8.4):
+    - PromiseKit/CorePromise (= 6.8.4)
+    - PromiseKit/Foundation (= 6.8.4)
+    - PromiseKit/UIKit (= 6.8.4)
+  - PromiseKit/CorePromise (6.8.4)
+  - PromiseKit/Foundation (6.8.4):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.8.4):
+    - PromiseKit/CorePromise
+  - SDWebImage (5.0.1):
+    - SDWebImage/Core (= 5.0.1)
+  - SDWebImage/Core (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - CodableAlamofire
+  - ExtraKit (from `https://www.github.com/rickbdotcom/ExtraKit`)
+  - PromiseKit
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CodableAlamofire
+    - PromiseKit
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  ExtraKit:
+    :git: https://www.github.com/rickbdotcom/ExtraKit
+
+CHECKOUT OPTIONS:
+  ExtraKit:
+    :commit: 57347baf45f8c87dd27f64dcc26c9520f65b0cd4
+    :git: https://www.github.com/rickbdotcom/ExtraKit
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  CodableAlamofire: b587c1198562824abb1f468aed34feb00d6cecd8
+  ExtraKit: 1153e900a8da104882e3bc80afb3608d1c3631b3
+  PromiseKit: 51794a832647e7b819336dc2279039ce9f1cc49b
+  SDWebImage: 27dd2c9ea07a2252f94557c9fbb6105ee94b74c9
+
+PODFILE CHECKSUM: 3d607d5947512e2b57c05cbc8ec91f02c0e72449
+
+COCOAPODS: 1.6.1

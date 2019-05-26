@@ -15,8 +15,6 @@ extension Notification.Name {
 
 class RestaurantMapView: MKMapView, MKMapViewDelegate {
 
-    var appManager: AppManager?
-
     var restaurants: [Restaurant]? {
         didSet {
             annotations.forEach { removeAnnotation($0) }
@@ -48,7 +46,7 @@ class RestaurantMapView: MKMapView, MKMapViewDelegate {
 
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         if let restaurant = (view.annotation as? RestaurantAnnotation)?.restaurant {
-            appManager?.showDetail(for: restaurant)
+            appManager.showDetail(for: restaurant)
         }
     }
 
@@ -105,13 +103,6 @@ class RestaurantMapViewController: UIViewController {
         }
     }
 
-    override var appManager: AppManager? {
-        didSet {
-            loadViewIfNeeded()
-            mapView.appManager = appManager
-        }
-    }
-
     override func loadView() {
         view = RestaurantMapView(frame: .zero)
         navigationItem.title = .restaurants
@@ -142,6 +133,6 @@ extension UIViewController {
     }
 
     @IBAction func showRestaurantMap() {
-        appManager?.showRestaurantMap(with: self)
+        appManager.showRestaurantMap(with: self)
     }
 }
