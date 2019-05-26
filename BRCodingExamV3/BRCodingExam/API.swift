@@ -14,7 +14,7 @@ struct LunchTymeAPICollection: APIEndpointCollection {
     let baseURL: URL
     let apiVersion: String?
 
-    struct GetRestaurants: LunchTymeAPIEndpoint {
+    struct GetRestaurants: CollectionEndpoint {
         var endpoint: Endpoint { return .init("restaurants.json") }
         let parameters: Parameters?
 
