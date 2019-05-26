@@ -33,9 +33,48 @@
 		0D686458228DC28100E88546 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D686457228DC28100E88546 /* WebViewController.swift */; };
 		0D68645F228DFF0600E88546 /* Lunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D68645B228DFF0600E88546 /* Lunch.storyboard */; };
 		0DD4F9DF229AE3A7006DA6EC /* AppManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4F9DE229AE3A6006DA6EC /* AppManagerProtocol.swift */; };
+		0DD4F9E7229AE466006DA6EC /* BRCodingExamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4F9E6229AE466006DA6EC /* BRCodingExamTests.swift */; };
+		0DD4F9F0229AE5FC006DA6EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D68644D228DBEC500E88546 /* AppDelegate.swift */; };
+		0DD4F9F1229AE5FC006DA6EC /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D68644F228DBF9600E88546 /* Restaurant.swift */; };
+		0DD4F9F2229AE5FC006DA6EC /* RestaurantNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BC1202294ABEA00928136 /* RestaurantNavigationController.swift */; };
+		0DD4F9F3229AE5FC006DA6EC /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D686453228DC25F00E88546 /* RestaurantsViewController.swift */; };
+		0DD4F9F4229AE5FC006DA6EC /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BC1222294AC9D00928136 /* RestaurantCell.swift */; };
+		0DD4F9F5229AE5FC006DA6EC /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D686455228DC27100E88546 /* RestaurantDetailViewController.swift */; };
+		0DD4F9F6229AE5FC006DA6EC /* RestaurantInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BC1252294ACCC00928136 /* RestaurantInfo.swift */; };
+		0DD4F9F7229AE5FC006DA6EC /* RestaurantMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BC1242294ACCC00928136 /* RestaurantMap.swift */; };
+		0DD4F9F8229AE5FC006DA6EC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D686457228DC28100E88546 /* WebViewController.swift */; };
+		0DD4F9F9229AE5FC006DA6EC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B9C902290973F008BD2D3 /* API.swift */; };
+		0DD4F9FA229AE5FC006DA6EC /* AppManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4F9DE229AE3A6006DA6EC /* AppManagerProtocol.swift */; };
+		0DD4F9FB229AE5FC006DA6EC /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B9C9B22909E53008BD2D3 /* AppManager.swift */; };
+		0DD4F9FC229AE5FC006DA6EC /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B9CA42290A6E6008BD2D3 /* Appearance.swift */; };
+		0DD4F9FD229AE5FC006DA6EC /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEBAE672294B45900DD9BDF /* AppConfiguration.swift */; };
+		0DD4F9FE229AE5FC006DA6EC /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B9C8922909404008BD2D3 /* Activity.swift */; };
+		0DD4F9FF229AE5FC006DA6EC /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B9C8A22909404008BD2D3 /* Alamofire.swift */; };
+		0DD4FA00229AE5FC006DA6EC /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B9C8B22909404008BD2D3 /* APIEndpoint.swift */; };
+		0DD4FA01229AE5FC006DA6EC /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B9C93229099DC008BD2D3 /* Error.swift */; };
+		0DD4FA02229AE5FC006DA6EC /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B9C92229099DC008BD2D3 /* Promise.swift */; };
+		0DD4FA03229AE5FC006DA6EC /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B9C9722909C01008BD2D3 /* Storyboards.swift */; };
+		0DD4FA04229AE5FC006DA6EC /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B9C9D2290A4C8008BD2D3 /* Images.swift */; };
+		0DD4FA05229AE5FC006DA6EC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B9CA22290A5DF008BD2D3 /* Strings.swift */; };
+		0DD4FA06229AE5FC006DA6EC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B9CA62290A7D0008BD2D3 /* Colors.swift */; };
+		0DD4FA09229AE608006DA6EC /* Lunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D68645B228DFF0600E88546 /* Lunch.storyboard */; };
+		0DD4FA0A229AE62C006DA6EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D686442228DBE9A00E88546 /* Assets.xcassets */; };
+		0DD4FA0B229AE631006DA6EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D686444228DBE9A00E88546 /* LaunchScreen.storyboard */; };
+		0DD4FA0C229AE631006DA6EC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D2B9C9F2290A567008BD2D3 /* Localizable.strings */; };
 		0DEBAE682294B45900DD9BDF /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEBAE672294B45900DD9BDF /* AppConfiguration.swift */; };
+		0F68C983FE371328F2B922F9 /* Pods_BRCodingExamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F045129AC40C072380040C /* Pods_BRCodingExamTests.framework */; };
 		C1F0007E861854A0BC01E90D /* Pods_BRCodingExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F6B8BE97FDE0B21322908E /* Pods_BRCodingExam.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0DD4F9E9229AE466006DA6EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D68642E228DBE9900E88546 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D686435228DBE9900E88546;
+			remoteInfo = BRCodingExam;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		05F6B8BE97FDE0B21322908E /* Pods_BRCodingExam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BRCodingExam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,9 +106,15 @@
 		0D686457228DC28100E88546 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		0D68645C228DFF0600E88546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Lunch.storyboard; sourceTree = "<group>"; };
 		0DD4F9DE229AE3A6006DA6EC /* AppManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManagerProtocol.swift; sourceTree = "<group>"; };
+		0DD4F9E4229AE466006DA6EC /* BRCodingExamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BRCodingExamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DD4F9E6229AE466006DA6EC /* BRCodingExamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRCodingExamTests.swift; sourceTree = "<group>"; };
+		0DD4F9E8229AE466006DA6EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DEBAE672294B45900DD9BDF /* AppConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		62F045129AC40C072380040C /* Pods_BRCodingExamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BRCodingExamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		771A4DE343C330A09D24F72C /* Pods-BRCodingExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRCodingExam.debug.xcconfig"; path = "Target Support Files/Pods-BRCodingExam/Pods-BRCodingExam.debug.xcconfig"; sourceTree = "<group>"; };
+		B2FF80269BB8CEDB5B3EE939 /* Pods-BRCodingExamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRCodingExamTests.debug.xcconfig"; path = "Target Support Files/Pods-BRCodingExamTests/Pods-BRCodingExamTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D375D71305CBFF19C79E63BC /* Pods-BRCodingExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRCodingExam.release.xcconfig"; path = "Target Support Files/Pods-BRCodingExam/Pods-BRCodingExam.release.xcconfig"; sourceTree = "<group>"; };
+		FB18801B0E65F54A418F9382 /* Pods-BRCodingExamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRCodingExamTests.release.xcconfig"; path = "Target Support Files/Pods-BRCodingExamTests/Pods-BRCodingExamTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +126,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0DD4F9E1229AE466006DA6EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F68C983FE371328F2B922F9 /* Pods_BRCodingExamTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				0D686438228DBE9900E88546 /* BRCodingExam */,
+				0DD4F9E5229AE466006DA6EC /* BRCodingExamTests */,
 				0D686437228DBE9900E88546 /* Products */,
 				995D0D1BBF348C7B8F34FE82 /* Pods */,
 				EA539C4E04C914DB8915E085 /* Frameworks */,
@@ -99,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				0D686436228DBE9900E88546 /* BRCodingExam.app */,
+				0DD4F9E4229AE466006DA6EC /* BRCodingExamTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,11 +193,22 @@
 			path = BRCodingExam;
 			sourceTree = "<group>";
 		};
+		0DD4F9E5229AE466006DA6EC /* BRCodingExamTests */ = {
+			isa = PBXGroup;
+			children = (
+				0DD4F9E6229AE466006DA6EC /* BRCodingExamTests.swift */,
+				0DD4F9E8229AE466006DA6EC /* Info.plist */,
+			);
+			path = BRCodingExamTests;
+			sourceTree = "<group>";
+		};
 		995D0D1BBF348C7B8F34FE82 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				771A4DE343C330A09D24F72C /* Pods-BRCodingExam.debug.xcconfig */,
 				D375D71305CBFF19C79E63BC /* Pods-BRCodingExam.release.xcconfig */,
+				B2FF80269BB8CEDB5B3EE939 /* Pods-BRCodingExamTests.debug.xcconfig */,
+				FB18801B0E65F54A418F9382 /* Pods-BRCodingExamTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -151,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				05F6B8BE97FDE0B21322908E /* Pods_BRCodingExam.framework */,
+				62F045129AC40C072380040C /* Pods_BRCodingExamTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,6 +245,25 @@
 			productReference = 0D686436228DBE9900E88546 /* BRCodingExam.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0DD4F9E3229AE466006DA6EC /* BRCodingExamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DD4F9EB229AE466006DA6EC /* Build configuration list for PBXNativeTarget "BRCodingExamTests" */;
+			buildPhases = (
+				7AA4F575BC1F464CDF42F097 /* [CP] Check Pods Manifest.lock */,
+				0DD4F9E0229AE466006DA6EC /* Sources */,
+				0DD4F9E1229AE466006DA6EC /* Frameworks */,
+				0DD4F9E2229AE466006DA6EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0DD4F9EA229AE466006DA6EC /* PBXTargetDependency */,
+			);
+			name = BRCodingExamTests;
+			productName = BRCodingExamTests;
+			productReference = 0DD4F9E4229AE466006DA6EC /* BRCodingExamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -191,6 +277,10 @@
 					0D686435228DBE9900E88546 = {
 						CreatedOnToolsVersion = 10.2;
 						LastSwiftMigration = 1020;
+					};
+					0DD4F9E3229AE466006DA6EC = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 0D686435228DBE9900E88546;
 					};
 				};
 			};
@@ -208,6 +298,7 @@
 			projectRoot = "";
 			targets = (
 				0D686435228DBE9900E88546 /* BRCodingExam */,
+				0DD4F9E3229AE466006DA6EC /* BRCodingExamTests */,
 			);
 		};
 /* End PBXProject section */
@@ -221,6 +312,17 @@
 				0D2B9CA12290A568008BD2D3 /* Localizable.strings in Resources */,
 				0D68645F228DFF0600E88546 /* Lunch.storyboard in Resources */,
 				0D686443228DBE9A00E88546 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DD4F9E2229AE466006DA6EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DD4FA0B229AE631006DA6EC /* LaunchScreen.storyboard in Resources */,
+				0DD4FA0C229AE631006DA6EC /* Localizable.strings in Resources */,
+				0DD4FA0A229AE62C006DA6EC /* Assets.xcassets in Resources */,
+				0DD4FA09229AE608006DA6EC /* Lunch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +399,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7AA4F575BC1F464CDF42F097 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BRCodingExamTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -330,7 +454,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0DD4F9E0229AE466006DA6EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DD4F9F9229AE5FC006DA6EC /* API.swift in Sources */,
+				0DD4FA06229AE5FC006DA6EC /* Colors.swift in Sources */,
+				0DD4FA00229AE5FC006DA6EC /* APIEndpoint.swift in Sources */,
+				0DD4F9F4229AE5FC006DA6EC /* RestaurantCell.swift in Sources */,
+				0DD4FA04229AE5FC006DA6EC /* Images.swift in Sources */,
+				0DD4F9F2229AE5FC006DA6EC /* RestaurantNavigationController.swift in Sources */,
+				0DD4F9F0229AE5FC006DA6EC /* AppDelegate.swift in Sources */,
+				0DD4F9F8229AE5FC006DA6EC /* WebViewController.swift in Sources */,
+				0DD4FA03229AE5FC006DA6EC /* Storyboards.swift in Sources */,
+				0DD4F9FA229AE5FC006DA6EC /* AppManagerProtocol.swift in Sources */,
+				0DD4FA02229AE5FC006DA6EC /* Promise.swift in Sources */,
+				0DD4F9FE229AE5FC006DA6EC /* Activity.swift in Sources */,
+				0DD4F9FD229AE5FC006DA6EC /* AppConfiguration.swift in Sources */,
+				0DD4F9FB229AE5FC006DA6EC /* AppManager.swift in Sources */,
+				0DD4F9E7229AE466006DA6EC /* BRCodingExamTests.swift in Sources */,
+				0DD4F9F6229AE5FC006DA6EC /* RestaurantInfo.swift in Sources */,
+				0DD4F9F3229AE5FC006DA6EC /* RestaurantsViewController.swift in Sources */,
+				0DD4F9F7229AE5FC006DA6EC /* RestaurantMap.swift in Sources */,
+				0DD4F9FC229AE5FC006DA6EC /* Appearance.swift in Sources */,
+				0DD4F9FF229AE5FC006DA6EC /* Alamofire.swift in Sources */,
+				0DD4F9F5229AE5FC006DA6EC /* RestaurantDetailViewController.swift in Sources */,
+				0DD4F9F1229AE5FC006DA6EC /* Restaurant.swift in Sources */,
+				0DD4FA01229AE5FC006DA6EC /* Error.swift in Sources */,
+				0DD4FA05229AE5FC006DA6EC /* Strings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0DD4F9EA229AE466006DA6EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D686435228DBE9900E88546 /* BRCodingExam */;
+			targetProxy = 0DD4F9E9229AE466006DA6EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0D2B9C9F2290A567008BD2D3 /* Localizable.strings */ = {
@@ -517,6 +680,48 @@
 			};
 			name = Release;
 		};
+		0DD4F9EC229AE466006DA6EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2FF80269BB8CEDB5B3EE939 /* Pods-BRCodingExamTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M2A5Q8WGD8;
+				INFOPLIST_FILE = BRCodingExamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rickb.BRCodingExamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BRCodingExam.app/BRCodingExam";
+			};
+			name = Debug;
+		};
+		0DD4F9ED229AE466006DA6EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB18801B0E65F54A418F9382 /* Pods-BRCodingExamTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M2A5Q8WGD8;
+				INFOPLIST_FILE = BRCodingExamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rickb.BRCodingExamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BRCodingExam.app/BRCodingExam";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -534,6 +739,15 @@
 			buildConfigurations = (
 				0D68644B228DBE9A00E88546 /* Debug */,
 				0D68644C228DBE9A00E88546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DD4F9EB229AE466006DA6EC /* Build configuration list for PBXNativeTarget "BRCodingExamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DD4F9EC229AE466006DA6EC /* Debug */,
+				0DD4F9ED229AE466006DA6EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

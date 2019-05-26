@@ -28,6 +28,7 @@ class AppManager: NSObject, AppManagerProtocol {
     let endpointCollection: LunchTymeAPICollection
     let sessionManager: SessionManager
     let restaurantNavigationController: RestaurantNavigationController
+
     private var restaurants: [Restaurant]?
 
     init(endpointCollection: LunchTymeAPICollection, sessionManager: SessionManager, restaurantNavigationController: RestaurantNavigationController) {

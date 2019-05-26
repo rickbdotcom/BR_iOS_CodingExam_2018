@@ -11,4 +11,8 @@ target 'BRCodingExam' do
 	pod 'PromiseKit'
 	pod 'SDWebImage'
 	pod 'ExtraKit', :git => 'https://www.github.com/rickbdotcom/ExtraKit'
+
+  	target 'BRCodingExamTests' do
+	    inherit! :search_paths
+	end
 end
