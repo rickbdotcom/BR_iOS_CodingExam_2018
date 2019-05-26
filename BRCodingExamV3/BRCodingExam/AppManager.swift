@@ -10,17 +10,6 @@ import UIKit
 import ExtraKit
 import PromiseKit
 
-
-protocol AppManagerProtocol {
-    func getRestaurants() -> Promise<[Restaurant]>
-    func showDetail(for restaurant: Restaurant?)
-    func showRestaurantMap(with viewController: UIViewController)
-}
-
-protocol AppManagerContainer: class {
-    var appManager: AppManagerProtocol { get }
-}
-
 private var sharedAppManager: AppManagerProtocol!
 
 func setAppManager(_ appManager: AppManagerProtocol) {
@@ -28,12 +17,10 @@ func setAppManager(_ appManager: AppManagerProtocol) {
 }
 
 extension UIViewController {
-
     var appManager: AppManagerProtocol { return sharedAppManager }
 }
 
 extension UIView {
-
     var appManager: AppManagerProtocol { return sharedAppManager }
 }
 
