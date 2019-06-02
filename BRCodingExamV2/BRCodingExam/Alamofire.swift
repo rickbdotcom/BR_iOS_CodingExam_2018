@@ -12,33 +12,33 @@ import PromiseKit
 
 public extension SessionManager {
 
-	func endpointRequest<T: APIEndpoint>(_ endpoint: T, baseURL: URL, headers: [String: String]? = nil, encoder: JSONEncoder = JSONEncoder(), decoder: JSONDecoder = JSONDecoder()) -> Promise<DataResponse<T.Response>> {
-		return firstly { () -> Promise<DataResponse<T.Response>> in
-			let urlRequest = try endpoint.request(baseURL: baseURL, headers: headers, encoder: encoder)
-			return request(urlRequest).validate().debugLog().decodableObject(decoder: decoder)
-		}
-	}
-	
-	func dataEndpointRequest<T: APIEndpoint>(_ endpoint: T, baseURL: URL, headers: [String: String]? = nil, encoder: JSONEncoder = JSONEncoder()) -> Promise<DefaultDataResponse> {
-		return firstly { () -> Promise<DefaultDataResponse> in
-			let urlRequest = try endpoint.request(baseURL: baseURL, headers: headers, encoder: encoder)
-			return request(urlRequest).validate().debugLog().data()
-		}
-	}
+    func endpointRequest<T: APIEndpoint>(_ endpoint: T, baseURL: URL, parameters: T.Parameters? = nil, headers: [String: String]? = nil, encoder: JSONEncoder = JSONEncoder(), decoder: JSONDecoder = JSONDecoder()) -> Promise<DataResponse<T.Response>> {
+        return firstly { () -> Promise<DataResponse<T.Response>> in
+            let urlRequest = try endpoint.request(baseURL: baseURL, parameters: parameters, headers: headers, encoder: encoder)
+            return request(urlRequest).validate().debugLog().decodableObject(decoder: decoder)
+        }
+    }
+
+    func dataEndpointRequest<T: APIEndpoint>(_ endpoint: T, baseURL: URL, parameters: T.Parameters? = nil, headers: [String: String]? = nil, encoder: JSONEncoder = JSONEncoder()) -> Promise<DefaultDataResponse> {
+        return firstly { () -> Promise<DefaultDataResponse> in
+            let urlRequest = try endpoint.request(baseURL: baseURL, parameters: parameters, headers: headers, encoder: encoder)
+            return request(urlRequest).validate().debugLog().data()
+        }
+    }
 }
 
 public extension SessionManager {
 
 // I wish I could actually constrain APIEndpoint to APIEndpointCollection.CollectionEndpoint but Swift doesn't allow it
-	func endpointRequest<T: APIEndpoint, C: APIEndpointCollection>(_ collection: C, _ endpoint: T, headers: [String: String]? = nil, encoder: JSONEncoder = JSONEncoder(), decoder: JSONDecoder = JSONDecoder()) -> Promise<DataResponse<T.Response>> {
-		assert(collection.isValid(endpoint: endpoint)) // so we have this runtime assert instead
-		return endpointRequest(endpoint, baseURL: collection.apiBaseURL, headers: headers, encoder: encoder, decoder: decoder)
-	}
+    func endpointRequest<T: APIEndpoint, C: APIEndpointCollection>(_ collection: C, _ endpoint: T, _ parameters: T.Parameters? = nil, headers: [String: String]? = nil, encoder: JSONEncoder = JSONEncoder(), decoder: JSONDecoder = JSONDecoder()) -> Promise<DataResponse<T.Response>> {
+        assert(collection.isCollectionEndpoint(endpoint))
+        return endpointRequest(endpoint, baseURL: collection.apiBaseURL, parameters: parameters, headers: headers, encoder: encoder, decoder: decoder)
+    }
 
-	func dataEndpointRequest<T: APIEndpoint, C: APIEndpointCollection>(_ collection: C, _ endpoint: T, headers: [String: String]? = nil, encoder: JSONEncoder = JSONEncoder()) -> Promise<DefaultDataResponse> {
-		assert(collection.isValid(endpoint: endpoint))
-		return dataEndpointRequest(endpoint, baseURL: collection.apiBaseURL, headers: headers, encoder: encoder)
-	}
+    func dataEndpointRequest<T: APIEndpoint, C: APIEndpointCollection>(_ collection: C, _ endpoint: T, _ parameters: T.Parameters? = nil, headers: [String: String]? = nil, encoder: JSONEncoder = JSONEncoder()) -> Promise<DefaultDataResponse> {
+        assert(collection.isCollectionEndpoint(endpoint))
+        return dataEndpointRequest(endpoint, baseURL: collection.apiBaseURL, parameters: parameters, headers: headers, encoder: encoder)
+    }
 }
 
 public extension SessionManager {

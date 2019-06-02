@@ -39,7 +39,7 @@ class AppManager: NSObject, AppManagerProtocol {
 
 // for more sophisticated applications we'd could implement caching, data observers, paginated api, etc
     func getRestaurants() -> Promise<[Restaurant]> {
-        return sessionManager.endpointRequest(endpointCollection, LunchTymeAPICollection.GetRestaurants(parameters: .none)).map {
+        return sessionManager.endpointRequest(endpointCollection, LunchTymeAPICollection.GetRestaurants()).map {
             self.restaurants = $0.result.value?.restaurants
             return self.restaurants ?? []
         }

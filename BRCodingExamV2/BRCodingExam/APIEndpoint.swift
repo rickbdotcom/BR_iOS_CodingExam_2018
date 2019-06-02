@@ -11,19 +11,16 @@ import Foundation
 public protocol APIEndpoint {
 
 	var endpoint: Endpoint { get }
-	var parameters: Parameters? { get } 
-	
+
 	associatedtype Parameters: Encodable
 	associatedtype Response: Decodable
-	
-	func request(baseURL: URL, headers: [String: String]?, encoder: JSONEncoder) throws -> URLRequest
 }
 
 public extension APIEndpoint {
 
-	func request(baseURL: URL, headers: [String: String]?, encoder: JSONEncoder) throws -> URLRequest {
-		return try endpoint.request(baseURL: baseURL, parameters: parameters, headers: headers, encoder: encoder)
-	}
+    func request(baseURL: URL, parameters: Parameters?, headers: [String: String]?, encoder: JSONEncoder) throws -> URLRequest {
+        return try endpoint.request(baseURL: baseURL, parameters: parameters, headers: headers, encoder: encoder)
+    }
 }
 
 public struct Endpoint {
@@ -37,7 +34,7 @@ public struct Endpoint {
 		self.encoding = encoding
 	}
 
-	public func request<T: Encodable>(baseURL: URL, parameters: T?, headers: [String: String]?, encoder: JSONEncoder) throws -> URLRequest {
+    public func request<T: Encodable>(baseURL: URL, parameters: T?, headers: [String: String]?, encoder: JSONEncoder) throws -> URLRequest {
 		var url = baseURL
 		url.appendPathComponent(path)
 		
@@ -81,15 +78,15 @@ public protocol APIEndpointCollection {
 
 	associatedtype CollectionEndpoint
 
-	func isValid<T: APIEndpoint>(endpoint: T) -> Bool
+    func isCollectionEndpoint<T: APIEndpoint>(_ endpoint: T) -> Bool
 }
 
 public extension APIEndpointCollection {
 
-	func isValid<T: APIEndpoint>(endpoint: T) -> Bool {
-		return endpoint is CollectionEndpoint
-	}
-	
+    func isCollectionEndpoint<T: APIEndpoint>(_ endpoint: T) -> Bool {
+        return endpoint is CollectionEndpoint
+    }
+
 	var apiBaseURL: URL {
 		var baseURL = self.baseURL
 		if let apiVersion = self.apiVersion {

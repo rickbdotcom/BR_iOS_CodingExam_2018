@@ -16,7 +16,6 @@ struct LunchTymeAPICollection: APIEndpointCollection {
 
     struct GetRestaurants: CollectionEndpoint {
         var endpoint: Endpoint { return .init("restaurants.json") }
-        let parameters: Parameters?
 
         typealias Parameters = NoParameters
         struct Response: Decodable {
