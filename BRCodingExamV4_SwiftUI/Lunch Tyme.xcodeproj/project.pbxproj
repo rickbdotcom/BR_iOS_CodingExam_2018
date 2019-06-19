@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D9DF6F922B8A1390044DCF0 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DF6F822B8A1390044DCF0 /* Restaurant.swift */; };
 		0DCAD6D422A8BE5D0053346C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCAD6D322A8BE5D0053346C /* AppDelegate.swift */; };
 		0DCAD6D622A8BE5D0053346C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCAD6D522A8BE5D0053346C /* SceneDelegate.swift */; };
 		0DCAD6D822A8BE5D0053346C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCAD6D722A8BE5D0053346C /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D9DF6F822B8A1390044DCF0 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		0DCAD6D022A8BE5D0053346C /* Lunch Tyme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lunch Tyme.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DCAD6D322A8BE5D0053346C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DCAD6D522A8BE5D0053346C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				0DCAD6D722A8BE5D0053346C /* ContentView.swift */,
 				0DD5E8A122A94F980061E462 /* RestaurantsView.swift */,
 				0DD5E8A322A94FA80061E462 /* InternetsView.swift */,
+				0D9DF6F822B8A1390044DCF0 /* Restaurant.swift */,
 				0DCAD6D922A8BE5D0053346C /* Assets.xcassets */,
 				0DCAD6DE22A8BE5D0053346C /* LaunchScreen.storyboard */,
 				0DCAD6E122A8BE5D0053346C /* Info.plist */,
@@ -154,6 +157,7 @@
 			files = (
 				0DCAD6D422A8BE5D0053346C /* AppDelegate.swift in Sources */,
 				0DCAD6D622A8BE5D0053346C /* SceneDelegate.swift in Sources */,
+				0D9DF6F922B8A1390044DCF0 /* Restaurant.swift in Sources */,
 				0DD5E8A422A94FA80061E462 /* InternetsView.swift in Sources */,
 				0DCAD6D822A8BE5D0053346C /* ContentView.swift in Sources */,
 				0DD5E8A222A94F980061E462 /* RestaurantsView.swift in Sources */,
