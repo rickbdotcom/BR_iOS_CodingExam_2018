@@ -20,8 +20,7 @@ struct ContentView : View {
 			.tabItemLabel(VStack {
 				Image("tab_lunch")
 				Text("lunch")
-			})
-			.tag(0)
+			}).tag(0)
 
 			NavigationView {
 				InternetsView(request: URLRequest(url: URL(string: "https://www.bottlerocketstudios.com")!))
@@ -29,8 +28,7 @@ struct ContentView : View {
 			.tabItemLabel(VStack {
 				Image("tab_internets")
 				Text("internets")
-			})
-			.tag(1)
+			}).tag(1)
         }
     }
 }

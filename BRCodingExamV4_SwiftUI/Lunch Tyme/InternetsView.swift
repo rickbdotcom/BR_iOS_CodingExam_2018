@@ -20,25 +20,25 @@ struct InternetsView : View, Identifiable {
 
 	var body: some View {
 		WebView(webView: webView, canGoBack: $canGoBack, canGoForward: $canGoForward)
-			.navigationBarItems(leading:
-				HStack(spacing: 20.0) {
-					Button(action: {
-						self.webView.goBack()
-					}, label: {
-						Image("ic_webBack")
-					}).environment(\.isEnabled, canGoBack)
-					Button(action: {
-						self.webView.reload()
-					}, label: {
-						Image("ic_webRefresh")
-					})
-					Button(action: {
-						self.webView.goForward()
-					}, label: {
-						Image("ic_webForward")
-					}).environment(\.isEnabled, canGoForward)
-				}
-			)
+		.navigationBarItems(leading:
+			HStack(spacing: 20.0) {
+				Button(action: {
+					self.webView.goBack()
+				}, label: {
+					Image("ic_webBack")
+				}).environment(\.isEnabled, canGoBack)
+				Button(action: {
+					self.webView.reload()
+				}, label: {
+					Image("ic_webRefresh")
+				})
+				Button(action: {
+					self.webView.goForward()
+				}, label: {
+					Image("ic_webForward")
+				}).environment(\.isEnabled, canGoForward)
+			}
+		)
 	}
 
 	init(request: URLRequest) {
@@ -52,16 +52,13 @@ struct WebView: UIViewRepresentable {
 	@Binding var canGoForward: Bool
 
 	let webView: WKWebView
-	var cancellables: [AnyCancellable]!
 
 	init(webView: WKWebView, canGoBack: Binding<Bool>, canGoForward: Binding<Bool>) {
 		self.webView = webView
 		$canGoBack = canGoBack
 		$canGoForward = canGoForward
-		cancellables = [
-			AnyCancellable(webView.publisher(for: \.canGoBack, options: [.new]).assign(to: \.canGoBack, on: self)),
-			AnyCancellable(webView.publisher(for: \.canGoForward, options: [.new]).assign(to: \.canGoForward, on: self))
-		]
+		_ = webView.publisher(for: \.canGoBack, options: [.new]).assign(to: \.canGoBack, on: self)
+		_ = webView.publisher(for: \.canGoForward, options: [.new]).assign(to: \.canGoForward, on: self)
 	}
 
     func makeUIView(context: Context) -> WKWebView  {

@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D40D80E22BB33B8001A69F1 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D40D80D22BB33B8001A69F1 /* AppConfiguration.swift */; };
+		0D40D81122BB33EF001A69F1 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D40D80F22BB33EF001A69F1 /* APIEndpoint.swift */; };
+		0D40D81222BB33EF001A69F1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D40D81022BB33EF001A69F1 /* API.swift */; };
+		0D40D81422BB341A001A69F1 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D40D81322BB341A001A69F1 /* Alamofire.swift */; };
+		0D40D81722BB3481001A69F1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0D40D81622BB3481001A69F1 /* Alamofire */; };
+		0D40D81A22BB34B0001A69F1 /* CodableAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0D40D81922BB34B0001A69F1 /* CodableAlamofire */; };
 		0D9DF6F922B8A1390044DCF0 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DF6F822B8A1390044DCF0 /* Restaurant.swift */; };
 		0DCAD6D422A8BE5D0053346C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCAD6D322A8BE5D0053346C /* AppDelegate.swift */; };
 		0DCAD6D622A8BE5D0053346C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCAD6D522A8BE5D0053346C /* SceneDelegate.swift */; };
@@ -19,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D40D80D22BB33B8001A69F1 /* AppConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		0D40D80F22BB33EF001A69F1 /* APIEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		0D40D81022BB33EF001A69F1 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		0D40D81322BB341A001A69F1 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
 		0D9DF6F822B8A1390044DCF0 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		0DCAD6D022A8BE5D0053346C /* Lunch Tyme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lunch Tyme.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DCAD6D322A8BE5D0053346C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D40D81A22BB34B0001A69F1 /* CodableAlamofire in Frameworks */,
+				0D40D81722BB3481001A69F1 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +80,10 @@
 				0DD5E8A122A94F980061E462 /* RestaurantsView.swift */,
 				0DD5E8A322A94FA80061E462 /* InternetsView.swift */,
 				0D9DF6F822B8A1390044DCF0 /* Restaurant.swift */,
+				0D40D80D22BB33B8001A69F1 /* AppConfiguration.swift */,
+				0D40D81022BB33EF001A69F1 /* API.swift */,
+				0D40D80F22BB33EF001A69F1 /* APIEndpoint.swift */,
+				0D40D81322BB341A001A69F1 /* Alamofire.swift */,
 				0DCAD6D922A8BE5D0053346C /* Assets.xcassets */,
 				0DCAD6DE22A8BE5D0053346C /* LaunchScreen.storyboard */,
 				0DCAD6E122A8BE5D0053346C /* Info.plist */,
@@ -100,6 +116,10 @@
 			dependencies = (
 			);
 			name = "Lunch Tyme";
+			packageProductDependencies = (
+				0D40D81622BB3481001A69F1 /* Alamofire */,
+				0D40D81922BB34B0001A69F1 /* CodableAlamofire */,
+			);
 			productName = "Lunch Tyme";
 			productReference = 0DCAD6D022A8BE5D0053346C /* Lunch Tyme.app */;
 			productType = "com.apple.product-type.application";
@@ -128,6 +148,10 @@
 				Base,
 			);
 			mainGroup = 0DCAD6C722A8BE5D0053346C;
+			packageReferences = (
+				0D40D81522BB3481001A69F1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				0D40D81822BB34B0001A69F1 /* XCRemoteSwiftPackageReference "CodableAlamofire" */,
+			);
 			productRefGroup = 0DCAD6D122A8BE5D0053346C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -160,7 +184,11 @@
 				0D9DF6F922B8A1390044DCF0 /* Restaurant.swift in Sources */,
 				0DD5E8A422A94FA80061E462 /* InternetsView.swift in Sources */,
 				0DCAD6D822A8BE5D0053346C /* ContentView.swift in Sources */,
+				0D40D80E22BB33B8001A69F1 /* AppConfiguration.swift in Sources */,
+				0D40D81422BB341A001A69F1 /* Alamofire.swift in Sources */,
 				0DD5E8A222A94F980061E462 /* RestaurantsView.swift in Sources */,
+				0D40D81222BB33EF001A69F1 /* API.swift in Sources */,
+				0D40D81122BB33EF001A69F1 /* APIEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +382,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0D40D81522BB3481001A69F1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.8.2;
+			};
+		};
+		0D40D81822BB34B0001A69F1 /* XCRemoteSwiftPackageReference "CodableAlamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Otbivnoe/CodableAlamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0D40D81622BB3481001A69F1 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D40D81522BB3481001A69F1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		0D40D81922BB34B0001A69F1 /* CodableAlamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D40D81822BB34B0001A69F1 /* XCRemoteSwiftPackageReference "CodableAlamofire" */;
+			productName = CodableAlamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0DCAD6C822A8BE5D0053346C /* Project object */;
 }
