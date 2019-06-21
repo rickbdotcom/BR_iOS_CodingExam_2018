@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol APIEndpoint {
+protocol APIEndpoint {
 
 	var endpoint: Endpoint { get }
 
@@ -16,25 +16,25 @@ public protocol APIEndpoint {
 	associatedtype Response: Decodable
 }
 
-public extension APIEndpoint {
+extension APIEndpoint {
 
     func request(baseURL: URL, parameters: Parameters?, headers: [String: String]?, encoder: JSONEncoder) throws -> URLRequest {
         return try endpoint.request(baseURL: baseURL, parameters: parameters, headers: headers, encoder: encoder)
     }
 }
 
-public struct Endpoint {
-	public let path: String
-	public let method: HTTPMethod
-	public let encoding: ParameterEncoding?
+struct Endpoint {
+	let path: String
+	let method: HTTPMethod
+	let encoding: ParameterEncoding?
 	
-	public init(_ path: String, _ method: HTTPMethod = .get, encoding: ParameterEncoding? = nil) {
+	init(_ path: String, _ method: HTTPMethod = .get, encoding: ParameterEncoding? = nil) {
 		self.path = path
 		self.method = method
 		self.encoding = encoding
 	}
 
-    public func request<T: Encodable>(baseURL: URL, parameters: T?, headers: [String: String]?, encoder: JSONEncoder) throws -> URLRequest {
+    func request<T: Encodable>(baseURL: URL, parameters: T?, headers: [String: String]?, encoder: JSONEncoder) throws -> URLRequest {
 		var url = baseURL
 		url.appendPathComponent(path)
 		
@@ -56,30 +56,30 @@ public struct Endpoint {
 		return try (encoding ?? defaultEncoding).encode(request, with: parameterJSON())
 	}
 
-	public var defaultEncoding: ParameterEncoding {
+	var defaultEncoding: ParameterEncoding {
 		return method == .get ? URLEncoding.default : JSONEncoding.default
 	}
 }
 
-public struct UnimplementedEndpoint: APIEndpoint {
-	public var endpoint: Endpoint { assertionFailure("unimplemented"); return .init("") }
-	public let parameters: Parameters?
+struct UnimplementedEndpoint: APIEndpoint {
+	var endpoint: Endpoint { assertionFailure("unimplemented"); return .init("") }
+	let parameters: Parameters?
 
-	public typealias Parameters = NoParameters
-	public typealias Response = EmptyResponse
+	typealias Parameters = NoParameters
+	typealias Response = EmptyResponse
 }
 
-public struct NoParameters: Encodable {
-	public init() { }
-	public static var none: NoParameters { return .init() }
+struct NoParameters: Encodable {
+	init() { }
+	static var none: NoParameters { return .init() }
 }
 
-public struct EmptyResponse: Decodable {
-	public init() { }
-	public static var empty: EmptyResponse { return .init() }
+struct EmptyResponse: Decodable {
+	init() { }
+	static var empty: EmptyResponse { return .init() }
 }
 
-public protocol APIEndpointCollection {
+protocol APIEndpointCollection {
 	var baseURL: URL { get }
 	var apiVersion: String? { get }
 
@@ -88,7 +88,7 @@ public protocol APIEndpointCollection {
     func isCollectionEndpoint<T: APIEndpoint>(_ endpoint: T) -> Bool
 }
 
-public extension APIEndpointCollection {
+extension APIEndpointCollection {
 
     func isCollectionEndpoint<T: APIEndpoint>(_ endpoint: T) -> Bool {
         return endpoint is CollectionEndpoint

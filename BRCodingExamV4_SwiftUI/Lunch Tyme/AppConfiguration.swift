@@ -8,10 +8,10 @@
 
 import Foundation
 
-public struct AppConfiguration: Equatable {
+struct AppConfiguration: Equatable {
 	let rawValue: String
 
-	public init(_ rawValue: Any?) {
+	init(_ rawValue: Any?) {
 #if DEBUG
 		let defaultValue = "staging"
 #else
@@ -24,7 +24,7 @@ public struct AppConfiguration: Equatable {
 		}
 	}
 
-	public init() {
+	init() {
 		if let config = ProcessInfo.processInfo.environment["Config"] {
 			self = AppConfiguration(config)
 		} else {
@@ -34,7 +34,7 @@ public struct AppConfiguration: Equatable {
 }
 
 // predefined configurations
-public extension AppConfiguration {
+extension AppConfiguration {
 	static let production = AppConfiguration("production")
 	static let staging = AppConfiguration("staging")
 }

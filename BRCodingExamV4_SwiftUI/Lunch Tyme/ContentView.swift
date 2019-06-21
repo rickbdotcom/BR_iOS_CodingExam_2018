@@ -9,14 +9,16 @@
 import SwiftUI
 
 struct ContentView : View {
-    @State var selection = 1
+	@EnvironmentObject var appController: AppController
+    @State var selection = 0
  
     var body: some View {
 
-        TabbedView(selection: $selection){
+        TabbedView(selection: $selection) {
 
-            Text("First View")
-			.font(.title)
+            NavigationView {
+				RestaurantsView(restaurants: appController.restaurantsModel)
+			}.font(.title)
 			.tabItemLabel(VStack {
 				Image("tab_lunch")
 				Text("lunch")
@@ -24,8 +26,7 @@ struct ContentView : View {
 
 			NavigationView {
 				InternetsView(request: URLRequest(url: URL(string: "https://www.bottlerocketstudios.com")!))
-			}
-			.tabItemLabel(VStack {
+			}.tabItemLabel(VStack {
 				Image("tab_internets")
 				Text("internets")
 			}).tag(1)

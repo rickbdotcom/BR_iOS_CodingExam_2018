@@ -8,16 +8,24 @@
 
 import SwiftUI
 
+extension Restaurant: Identifiable {
+	var id: String { return name ?? "" }
+}
+
 struct RestaurantsView : View {
+	@ObjectBinding var restaurants: RestaurantsModel
+
     var body: some View {
-        Text("Hello World!")
+       List(restaurants.restaurants) { restaurant in
+			Text(restaurant.id)
+		}
     }
 }
 
 #if DEBUG
 struct RestaurantsView_Previews : PreviewProvider {
     static var previews: some View {
-        RestaurantsView()
+        RestaurantsView(restaurants: RestaurantsModel())
     }
 }
 #endif
